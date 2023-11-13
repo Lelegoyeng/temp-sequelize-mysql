@@ -3,10 +3,10 @@ const app = express();
 const port = 5000;
 
 app.use(express.json());
+const db = require('./models/index')
 
 
-const testConnectionDB = require('./db/testConnectionDB');
-
+const testConnectionDB = require('./connection/testConnectionDB');
 testConnectionDB();
 
 app.listen(port, () => {

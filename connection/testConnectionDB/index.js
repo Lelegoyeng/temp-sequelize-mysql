@@ -1,8 +1,10 @@
 const { Sequelize } = require('sequelize');
+const dbConfig = require('../config');
+
 
 const sequelize = new Sequelize('testsquelize', 'root', '', {
-    host: 'localhost',
-    dialect: 'mysql'
+    host: dbConfig.HOST,
+    dialect: dbConfig.dialect
 });
 
 const testConnectionDB = async () => {
