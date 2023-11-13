@@ -34,7 +34,7 @@ const db = {};
 
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
-db.member = require('./member.model')(sequelize, Sequelize);
+db.hero = require('./hero.model')(sequelize, Sequelize);
 
 
 module.exports = db

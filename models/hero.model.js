@@ -1,6 +1,6 @@
-const Member = (sequelize, Sequelize) =>
+const Hero = (sequelize, Sequelize) =>
     sequelize.define(
-        "member",
+        "hero",
         {
             id: {
                 type: Sequelize.INTEGER,
@@ -35,4 +35,4 @@ const Member = (sequelize, Sequelize) =>
         }
     );
 
-module.exports = Member;
+module.exports = Hero;
