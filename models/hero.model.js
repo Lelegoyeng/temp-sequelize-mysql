@@ -16,18 +16,22 @@ const Hero = (sequelize, Sequelize) =>
                 type: Sequelize.STRING,
                 allowNull: false,
             },
+            role: {
+                type: Sequelize.STRING,
+                allowNull: false,
+            },
         },
         {
             hooks: {
                 afterCreate: (data, opt) =>
                     logDatabase({
-                        _table: "member",
+                        _table: "hero",
                         _action: "create",
                         ...data.dataValues,
                     }),
                 afterUpdate: (data, opt) =>
                     logDatabase({
-                        _table: "member",
+                        _table: "hero",
                         _action: "update",
                         ...data.dataValues,
                     }),
