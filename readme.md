@@ -4,7 +4,7 @@ Sequelize is a modern TypeScript and Node.js ORM for Oracle, Postgres, MySQL, Ma
 
 ## :computer: Getting Started
 
-# Buat New Database
+### Buat New Database
 testsquelize
 
 ```bash
