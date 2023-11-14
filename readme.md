@@ -3,4 +3,11 @@
 Sequelize is a modern TypeScript and Node.js ORM for Oracle, Postgres, MySQL, MariaDB, SQLite and SQL Server
 
 ## :computer: Getting Started
-aaa
+Api: http://localhost:5000/
+
+```bash
+POST    |  http://localhost:5000/
+GET     |  http://localhost:5000/
+DELETE  |  http://localhost:5000/:id
+UPDATE  |  http://localhost:5000/:id
+```
