@@ -4,10 +4,9 @@ const response = require('../../utils/respons');
 exports.get = async (req, res) => {
     try {
 
-        console.log('get success');
+        const hero = await db.hero.findAll({});
 
-
-        const result = ''
+        const result = hero
         return response.success("Get Hero Success", res, result);
     } catch (err) {
         return response.error(
