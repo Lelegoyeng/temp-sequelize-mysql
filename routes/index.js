@@ -1,5 +1,12 @@
-const routes = {};
-routes.hero = require("./Hero");
+const express = require("express");
+const router = express.Router();
+const hero = require("../controllers/Hero");
 
-module.exports = routes;
 
+router.get("/hero", hero.get);
+router.post("/hero", hero.create);
+
+
+
+
+module.exports = router

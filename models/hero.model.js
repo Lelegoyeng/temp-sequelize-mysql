@@ -21,22 +21,6 @@ const Hero = (sequelize, Sequelize) =>
                 allowNull: false,
             },
         },
-        {
-            hooks: {
-                afterCreate: (data, opt) =>
-                    logDatabase({
-                        _table: "hero",
-                        _action: "create",
-                        ...data.dataValues,
-                    }),
-                afterUpdate: (data, opt) =>
-                    logDatabase({
-                        _table: "hero",
-                        _action: "update",
-                        ...data.dataValues,
-                    }),
-            },
-        }
     );
 
 module.exports = Hero;
